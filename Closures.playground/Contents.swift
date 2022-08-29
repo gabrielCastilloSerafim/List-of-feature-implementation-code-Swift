@@ -27,3 +27,7 @@ calculator(no1: 2, no2: 3, operation: sum)
 calculator(no1: 2, no2: 3, operation: {$0 + $1})
 
 //In the example above we can see that the closure {$0 + $1} entered in to fill the function parameters space because it is already a function, the closure goes inside of curly braces "{}" and the dollar sing "$0" represents the first input and the "$1" represents the second and so on.
+
+//Closures can also have another syntax that has the structure:    {(parameter1, parameter2) in code} like below
+
+calculator(no1: 2, no2: 3, operation: {(no1, no2) in no1 + no2})
